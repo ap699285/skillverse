@@ -46,7 +46,7 @@
                                             <h5>About Us</h5>
                                             <div class="menu-about">
                                                 <a href="#" class="menu-about-logo"><img
-                                                        src="{{ asset('img/logo/logo-light.png') }}" alt=""></a>
+                                                        src="{{ asset('img/logo/logo-skillverse-light.png') }}" alt=""></a>
                                                 <p>We are many variations of passages available but the majority
                                                     have suffered alteration in some form by injected humour
                                                     words injected humour believable.</p>
@@ -218,7 +218,11 @@
                                 class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
                     <div class="nav-right-btn mt-2">
+                        @if (Auth::check())
+                        <a href="{{ url('/dashboard') }}" class="theme-btn"><i class="fa-solid fa-chart-pie fa-fw"></i>Dashboard</a>
+                        @else
                         <a href="{{ url('/login') }}" class="theme-btn"><i class="fa-solid fa-right-to-bracket"></i>Sign In</a>
+                        @endif
                     </div>
                 </div>
             </div>

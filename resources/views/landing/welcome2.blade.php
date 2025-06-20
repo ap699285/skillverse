@@ -11,7 +11,7 @@
     <meta name="keywords" content="">
 
     <!-- title -->
-    <title>SkillVerse - School, College, University And Courses HTML5 Template</title>
+    <title>SkillVerse - School, College, University</title>
 
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('img/logo/favicon-skillverse.png') }}">
@@ -48,7 +48,6 @@
         </form>
     </div>
     <!-- popup search end -->
-
 
     <main class="main">
         <!-- hero slider -->
@@ -169,7 +168,7 @@
 
 
     <!-- js -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="{{ asset('js/jquery-3.7.1.min.js') }}"></script>
+    <script src="{{ asset('js/jquery-3.7.1.min.js') }}"></script>
     <script src="{{ asset('js/modernizr.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('js/imagesloaded.pkgd.min.js') }}"></script>

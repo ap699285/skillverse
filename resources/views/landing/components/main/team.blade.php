@@ -11,10 +11,11 @@
             </div>
         </div>
         <div class="row">
+            @foreach($dataTeam as $dt)
             <div class="col-md-6 col-lg-3">
                 <div class="team-item wow fadeInUp" data-wow-delay=".25s">
                     <div class="team-img">
-                        <img src="{{ asset('img/team/01.jpg') }}" alt="thumb">
+                        <img src="{{ asset($dt->file_gambar) }}" alt="thumb">
                     </div>
                     <div class="team-social">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -24,73 +25,14 @@
                     </div>
                     <div class="team-content">
                         <div class="team-bio">
-                            <h5><a href="teacher-single.html">Angela T. Vigil</a></h5>
-                            <span>Associate Professor</span>
+                            <h5><a href="teacher-single.html">{{ $dt->judul }}</a></h5>
+                            <span>{{ $dt->sub_judul }}</span>
                         </div>
                     </div>
                     <span class="team-social-btn"><i class="fa-solid fa-share-nodes"></i></span>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="team-item wow fadeInUp" data-wow-delay=".50s">
-                    <div class="team-img">
-                        <img src="{{ asset('img/team/02.jpg') }}" alt="thumb">
-                    </div>
-                    <div class="team-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                    <div class="team-content">
-                        <div class="team-bio">
-                            <h5><a href="teacher-single.html">Frank A. Mitchell</a></h5>
-                            <span>Associate Professor</span>
-                        </div>
-                    </div>
-                    <span class="team-social-btn"><i class="fa-solid fa-share-nodes"></i></span>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="team-item wow fadeInUp" data-wow-delay=".75s">
-                    <div class="team-img">
-                        <img src="{{ asset('img/team/03.jpg') }}" alt="thumb">
-                    </div>
-                    <div class="team-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                    <div class="team-content">
-                        <div class="team-bio">
-                            <h5><a href="teacher-single.html">Susan D. Lunsford</a></h5>
-                            <span>CEO & Founder</span>
-                        </div>
-                    </div>
-                    <span class="team-social-btn"><i class="fa-solid fa-share-nodes"></i></span>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="team-item wow fadeInUp" data-wow-delay="1s">
-                    <div class="team-img">
-                        <img src="{{ asset('img/team/04.jpg') }}" alt="thumb">
-                    </div>
-                    <div class="team-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                    <div class="team-content">
-                        <div class="team-bio">
-                            <h5><a href="teacher-single.html">Dennis A. Pruitt</a></h5>
-                            <span>Associate Professor</span>
-                        </div>
-                    </div>
-                    <span class="team-social-btn"><i class="fa-solid fa-share-nodes"></i></span>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </div>

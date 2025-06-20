@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#nprogress .bar {
+    background: #ff914d;
+    /* Indigo Tailwind */
+    height: 4px;
+}
+
+#nprogress .peg {
+    box-shadow: 0 0 10px #ff914d, 0 0 5px #ff914d;
+}
