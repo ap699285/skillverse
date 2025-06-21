@@ -11,7 +11,7 @@
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-mobile-icon"><i class="far fa-bars"></i></span>
+                    <span class="navbar-toggler-mobile-icon"><i class="fa-solid fa-bars"></i></span>
                 </button>
             </div>
             <div class="collapse navbar-collapse" id="main_nav">
@@ -20,9 +20,7 @@
                         <a class="nav-link active" href="#" data-bs-toggle="dropdown">Home <i
                                 class="fa-solid fa-caret-down"></i></a>
                         <ul class="dropdown-menu fade-down">
-                            <li><a class="dropdown-item" href="index.html">Home Page 01</a></li>
-                            <li><a class="dropdown-item" href="index-2.html">Home Page 02</a></li>
-                            <li><a class="dropdown-item" href="index-3.html">Home Page 03</a></li>
+                            <li><a class="dropdown-item" href="{{ url('/') }}">Home Page</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -30,9 +28,6 @@
                                 class="fa-solid fa-caret-down"></i></a>
                         <ul class="dropdown-menu fade-down">
                             <li><a class="dropdown-item" href="course.html">Courses One</a></li>
-                            <li><a class="dropdown-item" href="course-2.html">Courses Two</a></li>
-                            <li><a class="dropdown-item" href="course-single.html">Course Single One</a></li>
-                            <li><a class="dropdown-item" href="course-single-2.html">Course Single Two</a></li>
                         </ul>
                     </li>
                     <li class="nav-item mega-menu dropdown">
@@ -108,20 +103,17 @@
                         <a class="nav-link" href="#" data-bs-toggle="dropdown">Pages <i
                                 class="fa-solid fa-caret-down"></i></a>
                         <ul class="dropdown-menu fade-down">
-                            <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                            <li><a class="dropdown-item" href="{{ url('about_us') }}">About Us</a></li>
                             <li class="dropdown-submenu">
                                 <a class="dropdown-item" href="#">Events <i class="fa-solid fa-caret-down"></i></a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="event.html">Events</a></li>
-                                    <li><a class="dropdown-item" href="event-single.html">Event Single</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
                                 <a class="dropdown-item" href="#">Portfolio <i class="fa-solid fa-caret-down"></i></a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="portfolio.html">Portfolio</a></li>
-                                    <li><a class="dropdown-item" href="portfolio-single.html">Portfolio
-                                            Single</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
@@ -140,17 +132,8 @@
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="login.html">Login</a></li>
                                     <li><a class="dropdown-item" href="register.html">Register</a></li>
-                                    <li><a class="dropdown-item" href="forgot-password.html">Forgot Password</a>
-                                    </li>
                                 </ul>
                             </li>
-                            <li><a class="dropdown-item" href="pricing.html">Pricing Plan</a></li>
-                            <li><a class="dropdown-item" href="faq.html">Faq</a></li>
-                            <li><a class="dropdown-item" href="testimonial.html">Testimonials</a></li>
-                            <li><a class="dropdown-item" href="404.html">404 Error</a></li>
-                            <li><a class="dropdown-item" href="coming-soon.html">Coming Soon</a></li>
-                            <li><a class="dropdown-item" href="terms.html">Terms Of Service</a></li>
-                            <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -200,14 +183,6 @@
                             <li><a class="dropdown-item" href="our-fund.html">Our Fund</a></li>
                             <li><a class="dropdown-item" href="athletics.html">Athletics</a></li>
                             <li><a class="dropdown-item" href="health-care.html">Health Care</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" data-bs-toggle="dropdown">Blog <i
-                                class="fa-solid fa-caret-down"></i></a>
-                        <ul class="dropdown-menu fade-down">
-                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
-                            <li><a class="dropdown-item" href="blog-single.html">Blog Single</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>

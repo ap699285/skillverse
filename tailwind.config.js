@@ -18,6 +18,7 @@ export default {
             colors: {
                 primary: '#ff914d',
                 secondary: '#05515d',
+                danger: '#f5473b',
             }
         },
     },

@@ -15,8 +15,22 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://unpkg.com/alpinejs" defer></script>
     <!-- NProgress CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" />
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EMTH70W7TG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EMTH70W7TG'); // Ganti dengan ID milikmu
+
+    </script>
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -26,7 +40,7 @@
     @include('layouts.navigation')
     <div class="flex pt-20 transition-all duration-300 ease-in-out">
         <!-- Sidebar -->
-        <div id="sidebar" :class="collapsed ? 'w-16' : 'w-64'" x-data="{ open: false }"
+        <div id="sidebar" :class="collapsed ? 'w-16' : 'w-64 h-screen overflow-y-auto'" x-data="{ open: false }"
             @mouseenter="if (collapsed) open = true" @mouseleave="if (collapsed) open = false"
             class="fixed top-0 left-0 min-h-screen pt-16 bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 transition-all duration-300 z-40 border-r">
             @include('layouts.sidebar.menu')

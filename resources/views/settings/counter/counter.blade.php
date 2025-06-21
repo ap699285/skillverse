@@ -1,8 +1,8 @@
-@section('title', 'Pengaturan Slider')
+@section('title', 'Pengaturan Counter')
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            Pengaturan Slider
+            Pengaturan Counter
         </h2>
     </x-slot>
 
@@ -14,10 +14,9 @@
                     <thead class="bg-gray-100 text-left text-sm font-semibold text-gray-500">
                         <tr>
                             <th class="px-4 py-3">#</th>
-                            <th class="px-4 py-3">Gambar</th>
+                            <th class="px-4 py-3">Icon</th>
                             <th class="px-4 py-3">Judul</th>
                             <th class="px-4 py-3">Sub Judul</th>
-                            <th class="px-4 py-3">Deskripsi</th>
                             <th class="px-4 py-3">Aksi</th>
                         </tr>
                     </thead>
@@ -26,22 +25,15 @@
                         <tr class="hover:bg-gray-50">
                             <td class="px-4 py-2">{{ $index + 1 }}</td>
                             <td class="px-4 py-2">
-                                <img src="{{ $post->file_gambar }}" class="max-h-56">
+                                <img src="{{ $post->file_gambar }}" class="max-h-32">
                             </td>
                             <td class="px-4 py-2">{{ $post->judul }}</td>
                             <td class="px-4 py-2">{{ $post->sub_judul }}</td>
-                            <td class="px-4 py-2">
-                                {{ $post->keterangan }}
-                            </td>
-                            <td class="flex px-4 py-2 align-middle">
-                                <button type="button"
-                                    class="text-white bg-blue-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xs p-2 text-center inline-flex items-center me-2 dark:bg-blue-600 dark:hover:bg-blue-500 dark:focus:ring-blue-800">
-                                    <i class="fa-solid fa-eye"></i>
-                                </button>
-                                <button type="button"
+                            <td class="px-4 py-2 align-middle">
+                                <a href="{{ url('pengaturan/halaman-awal/counter?edit=true&id='.$post->id) }}"
                                     class="text-white bg-yellow-500 hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-xs p-2 text-center inline-flex items-center me-2 dark:bg-yellow-600 dark:hover:bg-yellow-500 dark:focus:ring-yellow-800">
                                     <i class="fa-solid fa-pen-to-square"></i>
-                                </button>
+                                </a>
                             </td>
                         </tr>
                         @endforeach

@@ -23,6 +23,20 @@
     <link rel="stylesheet" href="{{ asset('css/magnific-popup.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EMTH70W7TG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EMTH70W7TG'); // Ganti dengan ID milikmu
+
+    </script>
 
 </head>
 
@@ -95,22 +109,22 @@
 
 
         <!-- cta-area -->
-        @include('landing.components.main.cta')
+        {{-- @include('landing.components.main.cta') --}}
         <!-- cta-area end -->
 
 
         <!-- event area -->
-        @include('landing.components.main.event')
+        {{-- @include('landing.components.main.event') --}}
         <!-- event area end -->
 
 
         <!-- enroll area-->
-        @include('landing.components.main.enrol')
+        {{-- @include('landing.components.main.enrol') --}}
         <!-- enroll area end -->
 
 
         <!-- department area -->
-        @include('landing.components.main.departement')
+        {{-- @include('landing.components.main.departement') --}}
         <!-- department area end -->
 
 
